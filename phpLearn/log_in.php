@@ -1,9 +1,10 @@
+<?php include 'layout.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Bank App</title>
+    <title>Log in</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="indexer.css">
     <script src="main.js"></script>
@@ -16,16 +17,11 @@
     
 <style>
         body{
-            /* background-color: orangered; */
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             color: white;
             font-size:1.2em;
-            /* background: url(img/a2.jpg) no-repeat center; */
-             /* no-repeat center bottom */
         }
         .container{
-            /* background-color: aquamarine !important; */
-            /* opacity: 0.9; */
             position: relative;
             top: 200px;
             padding: 20px;
@@ -36,48 +32,9 @@
             left: 80px;
             bottom: 38px;
         }
-        #title{
-            background-color: purple;
-            opacity: 0.2;
-        }
-        #title h1{
-            font-size: 100px !important;
-            text-align: center;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            color: white;
-        }
     </style>
 </head>
 <body>
-
-
-
-
-<div class="menu"> <span></span> </div>
-<nav id="nav">
-		<ul class="main">
-				<li><a target="_blank" href="signuph.php">Sign Up</a></li>
-				<li><a target="_blank" href="loginh.php">Log in</a></li>
-				<li><a href="#">Web Development</a></li>
-				<li><a href="#">Digital Marketing</a></li>
-				<li><a target="_blank" href="https://www.instagram.com/ravi_singh_7/">Portfolio</a></li>
-				<li><a target="_blank" href="https://500px.com/ravi7284007">Contact</a></li>
-		</ul>
-</nav>
-<div class="overlay"></div>
-
-<script>
-$('.menu, .overlay').click(function () {
-	$('.menu').toggleClass('clicked');
-	
-	$('#nav').toggleClass('show');
-	
-});
-</script>
-
-    <div id="title" class="jumbotron">
-            <h1>Bank App</h1>
-        </div>
     <div class="container" style="margin-top:-100px">
         <?php
         if (isset($msg)) {
@@ -95,7 +52,7 @@ $('.menu, .overlay').click(function () {
                 <input type="password" required  class="form-control" id="pwd" name="password">
             </div>
                 <button type="submit" class="btn btn-primary">Log in</button>
-                <p>Not yet registered? <a href="signuph.php">Sign up</a></p>
+                <p>Not yet registered? <a href="sign_up.php">Sign up</a></p>
                 
         </form>
     </div>

@@ -12,7 +12,7 @@ while ($r=mysqli_fetch_array($save)) {
 }
 if ($log) {
     $msg='Login failed! Invalid username or password';
-    include 'loginh.php';
+    include 'indexer.php';
 }
 else{
     echo "<script>alert('Login successful')</script>";

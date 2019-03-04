@@ -16,7 +16,7 @@ if($insert){
 }
 else {
     echo "<script>alert('Registration not successful!')</script>".mysqli_error($conn);
-    include "signuph.php";
+    include "indexe.php";
 
 }
 }
