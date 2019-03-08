@@ -27,6 +27,15 @@
 <body>
 
 <div class="container">
+	<?php
+	require "connect.php";
+		if(isset($msgs)){
+			echo "<h2 style='red'>".$msgs."</h2>";
+		}
+		if(isset($msgt)){
+			echo "<h2 style='red'>".$msgt."</h2>";
+		}
+	?>
 			<form class="col-md-6 mx-auto shadow pt-4 pd-4" action="signup.php" method="POST" enctype="multipart/form-data">
 				<h2>User Registration</h2>
 					<div class="form-group">
@@ -50,13 +59,9 @@
 					<input required type="password" name="pass" class="form-control" id="pwd">
 				</div>
 				<div class="form-group">
-					<label for="pwd">Confirm Password:</label>
-					<input required type="password" name="valpass" class="form-control" id="pwd">
-				</div>
-				<!-- <div class="form-group">
 					<label for="pht">Upload Photo:</label>
-					<input required type="file" name="photo" class="form-control" id="pht" name="photo">
-				</div> -->
+					<input type="file" name="fileToUpload" id="fileToUpload">
+				</div>
 					<button type="submit" class="btn btn-primary">Sign up</button>
 					<p>Signed up already? <a href="log_in.php">Log in</a></p>
 			</form>
